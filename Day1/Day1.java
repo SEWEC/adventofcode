@@ -32,9 +32,7 @@ public class Day1 {
                 for(int k = 0; k < expenseLists.get(a).size(); k++){
                     if(expenseLists.get(a).get(k) + expenseLists.get(4).get(j) >= 2020){
                         if(expenseLists.get(a).get(k) + expenseLists.get(4).get(j) > 2020){
-                            if(k > 0){
-                                k -= 2;
-                            }
+                            k--;
                             j--;
                         } else{
                             System.out.println(expenseLists.get(a).get(k));

@@ -34,9 +34,7 @@ public class part2 {
                 for(int i = 0; i < j; i++){
                     if(expenseLists.get(0).get(i) + expenseLists.get(0).get(j) >= target){
                         if(expenseLists.get(0).get(i) + expenseLists.get(0).get(j) > target){
-                            if(i > 0){
-                                i -= 2;
-                            }
+                            i--;
                             j--;
                         } else{
                             System.out.println(expenseLists.get(0).get(k));
